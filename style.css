@@ -27,3 +27,21 @@ body {
   margin: 10px auto;
   line-height: 85px;
 }
+
+.input-container {
+  width: 200px;
+  margin: 0 auto;
+  background: linear-gradient(
+    darkred,
+    orangered
+  );
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 2px solid #ffd700;
+}
+
+.input {
+  height: 30px;
+  font-size: 1.3rem;
+  padding-bottom: 30px
+}
