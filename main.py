@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from draw_surface import DrawSurface
 
 class App(ctk.CTk):
   def __init__(self):
