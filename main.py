@@ -6,6 +6,7 @@ class App(ctk.CTk):
     self.geometry('800x600')
     self.title('')
     self.iconbitmap('./images/empty.ico')
+    ctk.set_appearance_mode('dark')
     
     self.mainloop()
 
