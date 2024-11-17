@@ -7,8 +7,10 @@ class App(ctk.CTk):
     self.geometry('800x600')
     self.title('')
     self.iconbitmap('./images/empty.ico')
-    ctk.set_appearance_mode('dark')
+    ctk.set_appearance_mode('light')
     
+    DrawSurface(self)
+
     self.mainloop()
 
 if __name__ == '__main__':
