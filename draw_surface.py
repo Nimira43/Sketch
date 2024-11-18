@@ -8,7 +8,8 @@ class DrawSurface(Canvas):
 
     self.colour_string = colour_string
     self.brush_float = brush_float
-
+    self.allow_draw = False
+    
     self.bind('<Motion>', self.draw)
     self.bind('<Button>', self.activate_draw)
     self.bind('<ButtonRelease>', self.deactivate_draw)
@@ -16,6 +17,6 @@ class DrawSurface(Canvas):
   def draw(self, event):
     pass
   def activate_draw(self, event):
-    pass
+    self.allow_draw = True
   def deactivate_draw(self, event):
     pass
