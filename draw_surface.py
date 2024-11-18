@@ -20,7 +20,7 @@ class DrawSurface(Canvas):
   def draw(self, event):
     if self.allow_draw:
       if self.old_x and self.old_y:
-        self.create_line(start, end, fill = 'black')
+        self.create_line((self.old_x, self.old_y), (event.y, event.x), fill = 'black')
       self.old_x = event.x
       self.old_y = event.y
   def activate_draw(self, event):
