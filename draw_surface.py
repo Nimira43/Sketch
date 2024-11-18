@@ -12,3 +12,10 @@ class DrawSurface(Canvas):
     self.bind('<Motion>', self.draw)
     self.bind('<Button>', self.activate_draw)
     self.bind('<ButtonRelease>', self.deactivate_draw)
+
+  def draw(self, event):
+    pass
+  def activate_draw(self, event):
+    pass
+  def deactivate_draw(self, event):
+    pass
