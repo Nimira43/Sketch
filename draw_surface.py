@@ -23,8 +23,12 @@ class DrawSurface(Canvas):
         self.create_line((self.old_x, self.old_y), (event.x, event.y), fill = 'black')
       self.old_x = event.x
       self.old_y = event.y
+
+
   def activate_draw(self, event):
     self.allow_draw = True
 
   def deactivate_draw(self, event):
-    pass
+    self.allow_draw = False
+    self.old_x = None
+    self.old_y = None
