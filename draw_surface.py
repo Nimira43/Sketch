@@ -24,7 +24,6 @@ class DrawSurface(Canvas):
       self.old_x = event.x
       self.old_y = event.y
 
-
   def activate_draw(self, event):
     self.allow_draw = True
 
