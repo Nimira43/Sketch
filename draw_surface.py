@@ -10,14 +10,19 @@ class DrawSurface(Canvas):
     self.brush_float = brush_float
     self.allow_draw = False
 
+    self.old_x = None
+    self.old_y = None
+
     self.bind('<Motion>', self.draw)
     self.bind('<Button>', self.activate_draw)
     self.bind('<ButtonRelease>', self.deactivate_draw)
 
   def draw(self, event):
     if self.allow_draw:
-      self.create_oval(event.x - 5, event.y - 5, event.x + 5, event.y + 5, fill = 'black' )
-
+      if self.old_x and self.old_y:
+        self.create_line(start, end, fill = 'black')
+      self.old_x = event.x
+      self.old_y = event.y
   def activate_draw(self, event):
     self.allow_draw = True
 
