@@ -9,7 +9,12 @@ class App(ctk.CTk):
     self.iconbitmap('./images/empty.ico')
     ctk.set_appearance_mode('light')
     
-    DrawSurface(self)
+    self.colour_string = ctk.StringVar(value = '000')
+    self.brush_float = ctk.DoubleVar(value = 0.2)
+
+
+    DrawSurface(self, self.colour_string, self.brush_float)
+
 
     self.mainloop()
 
