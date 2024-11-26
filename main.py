@@ -10,7 +10,7 @@ class App(ctk.CTk):
     ctk.set_appearance_mode('light')
     
     self.colour_string = ctk.StringVar(value = '000')
-    self.brush_float = ctk.DoubleVar(value = 0.2)
+    self.brush_float = ctk.DoubleVar(value = 1)
 
     DrawSurface(self, self.colour_string, self.brush_float)
 
