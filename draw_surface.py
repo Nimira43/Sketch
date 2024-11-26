@@ -30,6 +30,7 @@ class DrawSurface(Canvas):
 
   def activate_draw(self, event):
     self.allow_draw = True
+    self.create_brush_line((event.x, event.y), (event.x + 1, event.y + 1))
 
   def deactivate_draw(self, event):
     self.allow_draw = False
